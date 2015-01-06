@@ -137,6 +137,7 @@ header{
 }
 
 .backgroundImage{
+    background-color:#262b37; 
 	background-image:url(image/ski.jpg); 
 	background-repeat: no-repeat;
     background-position: center; 
