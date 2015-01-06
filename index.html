@@ -122,10 +122,9 @@
 
 
 <!--DEBUT HEADER-->
-	<header style=" width: 100%">
-    	<div class="banner row" id="banner">
+	<header>
+    	<div class="banner row" id="banner" style="width: 1440px; height: 739px;">
       		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 backgroundImage" style="height:100%"></div>
-
     	</div>
     
     	<div class="bannerText container">
@@ -142,11 +141,7 @@
 	        		<span class="icon-bar"></span>
 	        		<span class="icon-bar"></span>
 	      			</button>
-
-	      			<a class="navbar-brand" href="#"></a>
-
-	      			<a class="navbar-brand" href="#"></a></a>
-
+	      			<a class="navbar-brand" href="#">Linga Ski Shop</a>
 	    		</div>
 
 	    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -360,6 +355,99 @@
 
 
 
+<!--FIN POPUP-->
+	<!--DEBUT POPUP TARIF ENTRETIEN-->
+	<div id="small-dialog1" class="small-dialog1 zoom-anim-dialog mfp-hide">
+		<h2 style="color:#ff675f;">Tarifs</h2>
+		<table class="table table-bordered" style="color:#84868d;">
+			<tr>
+				<th>Réparation</th>
+				<th>Ski</th>
+				<th>Snowboard</th>
+			</tr>
+			<tr>
+				<td>Affûtage latéral</td>
+				<td>8</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>Fartage à chaud</td>
+				<td>10</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>Fartage + affutage complet</td>
+				<td>21</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>Réparation complète avec rebouchage des trous et restructuration</td>
+				<td>35</td>
+				<td>45</td>
+			</tr>		
+		</table>
+	</div>
+	<!--FIN POPUP TARIF ENTRETIEN-->
+
+
+	<!--DEBUT POPUP TARIF GARANTIE-->
+	<div id="small-dialog2" class="small-dialog2 zoom-anim-dialog mfp-hide">
+		<h2 style="color:#ff675f;">Tarifs</h2>
+		<table class="table table-bordered" style="color:#84868d;">
+			<tr>
+				<th>Matériel loué</th>
+				<th>Garantie</th>
+				<th>Franchise</th>
+			</tr>
+			<tr>
+				<td>Ski bleu ou mini skis</td>
+				<td>1,50 €/J</td>
+				<td>87 €</td>
+			</tr>
+			<tr>
+				<td>Skis rouge</td>
+				<td>2,00 €/J</td>
+				<td>112 €</td>
+			</tr>
+			<tr>
+				<td>Skis noir</td>
+				<td>3,00 €/J</td>
+				<td>142 €</td>
+			</tr>
+			<tr>
+				<td>Skis enfant</td>
+				<td>0,50 €/J</td>
+				<td>36 €</td>
+			</tr>
+			<tr>
+				<td>Skis junior et skis fond</td>
+				<td>1,00 €/J</td>
+				<td>63 €</td>
+			</tr>
+			<tr>
+				<td>Skis junior +</td>
+				<td>1,50 €/J</td>
+				<td>73 €</td>
+			</tr>
+			<tr>
+				<td>Snowboard enfant</td>
+				<td>1,00 €/J</td>
+				<td>73 €</td>
+			</tr>
+			<tr>
+				<td>Snowboard débutant</td>
+				<td>1,50 €/J</td>
+				<td>100 €</td>
+			</tr>
+			<tr>
+				<td>Snowboard +</td>
+				<td>2,00 €/J</td>
+				<td>130 €</td>
+			</tr>
+		</table>
+	</div>
+	<!--FIN POPUP TARIF GARANTIE-->
+<!--FIN POPUP-->
 
 
 
@@ -756,7 +844,11 @@
 			</div>
 			<!--DEBUT LISTE ADRESSES-->
 
-
+			<!--DEBUT GOOGLE MAP-->
+			<div class="googleMap col-md-offset-1 col-md-9">
+				<div id="carte" style="width:100%; height:300px"></div>
+			</div>
+			<!--FIN GOOGLE MAP-->
 		</div>
 	</section>
 <!--FIN ADRESSES-->
@@ -773,7 +865,22 @@
 				<h2>NOS PARTENAIRES</h2>
 				<p>Parce que nous ne sommes pas seuls</p>
 			</div>
-	
+			<!--DEBUT LIGNE 1-->
+			<div class="row">
+				<div class="col-md-3 marge30px"><a href="http://www.chatel.com"><img src="image/chatel.gif" width="300"></a></div>
+				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.ecoleskiacademy.com"><img src="image/logo_skiacademy.gif" width="300"></a></div>
+				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.portesdusoleil.com"><img src="image/portessoleil.gif" width="300"></a></div>
+			</div>
+			<!--FIN LIGNE 1-->
+
+
+			<!--DEBUT LIGNE 2-->		
+			<div class="row">
+				<div class="col-md-3"><a href="http://www.hotel-leschuss.fr" ><img src="image/leschusss.png" width="300"></a></div>
+				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.circuit-glace-abondance.com/liens-loisirs"><img src="image/circuitglace.png" width="300"></a></div>
+				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.snowscoot.com"></a><img src="image/snowscoot.png" width="300"></div>
+			</div>
+			<!--FIN LIGNE 2-->		
 		</div>
 	</section>
 <!--FIN PARTENAIRES-->
@@ -812,8 +919,7 @@
         				</div>
          			</div>
           			<textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Votre message..."></textarea>
-        			<input type="submit" id="submit" name="send" class="submitBnt" value="Envoyer">
-
+        			<input type="submit" id="submit" name="send" class="submitBnt" value="Send message">
         			<div id="simple-msg"></div>
        			</form>
       		</div>
@@ -865,16 +971,37 @@
 			</div> 
 		</div>-->
 <!--FIN FOOTER-->
-
-<script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-54728226-1', 'auto');
-          ga('send', 'pageview');
-        </script>
+<script type="text/javascript">
+$(function() {
+ 
+    // grab the initial top offset of the navigation 
+    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) { 
+            $('#sticky_navigation').removeClass("navbar-static-top").addClass("navbar-fixed-top");
+            $('body').css({ 'margin-top': '62px' });
+        } else {
+            $('#sticky_navigation').removeClass("navbar-fixed-top").addClass("navbar-static-top");
+            $('body').css({ 'margin-top': '0px' });
+        }   
+    };
+     
+    // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+ 
+});
+</script>
 
  	</body>
 </html>
-
