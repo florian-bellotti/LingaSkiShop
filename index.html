@@ -756,11 +756,7 @@
 			</div>
 			<!--DEBUT LISTE ADRESSES-->
 
-			<!--DEBUT GOOGLE MAP-->
-			<div class="googleMap col-md-offset-1 col-md-9">
-				<div id="carte" style="width:100%; height:300px"></div>
-			</div>
-			<!--FIN GOOGLE MAP-->
+
 		</div>
 	</section>
 <!--FIN ADRESSES-->
@@ -777,22 +773,7 @@
 				<h2>NOS PARTENAIRES</h2>
 				<p>Parce que nous ne sommes pas seuls</p>
 			</div>
-			<!--DEBUT LIGNE 1-->
-			<div class="row">
-				<div class="col-md-3 marge30px"><a href="http://www.chatel.com"><img src="image/chatel.gif" width="300"></a></div>
-				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.ecoleskiacademy.com"><img src="image/logo_skiacademy.gif" width="300"></a></div>
-				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.portesdusoleil.com"><img src="image/portessoleil.gif" width="300"></a></div>
-			</div>
-			<!--FIN LIGNE 1-->
-
-
-			<!--DEBUT LIGNE 2-->		
-			<div class="row">
-				<div class="col-md-3"><a href="http://www.hotel-leschuss.fr" ><img src="image/leschusss.png" width="300"></a></div>
-				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.circuit-glace-abondance.com/liens-loisirs"><img src="image/circuitglace.png" width="300"></a></div>
-				<div class="col-md-offset-1 col-md-3 marge30px"><a  href="http://www.snowscoot.com"></a><img src="image/snowscoot.png" width="300"></div>
-			</div>
-			<!--FIN LIGNE 2-->		
+	
 		</div>
 	</section>
 <!--FIN PARTENAIRES-->
@@ -884,37 +865,7 @@
 			</div> 
 		</div>-->
 <!--FIN FOOTER-->
-<script type="text/javascript">
-$(function() {
- 
-    // grab the initial top offset of the navigation 
-    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
-     
-    // our function that decides weather the navigation bar should have "fixed" css position or not.
-    var sticky_navigation = function(){
-        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-         
-        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-        // otherwise change it back to relative
-        if (scroll_top > sticky_navigation_offset_top) { 
-            $('#sticky_navigation').removeClass("navbar-static-top").addClass("navbar-fixed-top");
-            $('body').css({ 'margin-top': '62px' });
-        } else {
-            $('#sticky_navigation').removeClass("navbar-fixed-top").addClass("navbar-static-top");
-            $('body').css({ 'margin-top': '0px' });
-        }   
-    };
-     
-    // run our function on load
-    sticky_navigation();
-     
-    // and run it again every time you scroll
-    $(window).scroll(function() {
-         sticky_navigation();
-    });
- 
-});
-</script>
+
 <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
