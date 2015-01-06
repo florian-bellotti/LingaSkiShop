@@ -137,7 +137,11 @@ header{
 }
 
 .backgroundImage{
-    
+	background-image:url(image/ski.jpg); 
+	background-repeat: no-repeat;
+    background-position: center; 
+    width:100%;
+	height:100%;
 }
 
 .navwrapper .container{
@@ -380,7 +384,10 @@ header{
  7.	Tarfis
 ------------------------------------------------------*/
 .tarif{
-
+	background-image:url(image/ski.jpg); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 .tarif .container{
