@@ -137,7 +137,6 @@ header{
 }
 
 .backgroundImage{
-    
     background-color:#262b37; 
 	background-image:url(image/ski.jpg); 
 	background-repeat: no-repeat;
@@ -656,4 +655,20 @@ header{
 	line-height:42px !important;
 }
 
+#scroller{
+    height:100px; 
+    width:100px; 
+    position: fixed; 
+    bottom: 8%; 
+    right:5%; 
+    z-index:2000;
+}
 
+#scrollerBtn{
+    font-size:50px; 
+    color :#ff675f;
+}
+
+#scrollerBtn:hover{
+    color:#f5534b;
+}

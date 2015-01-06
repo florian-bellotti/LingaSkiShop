@@ -2,16 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8" />
-		<link  href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<!--<link  href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="template.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="magnificpopup/magnificPopup.css">
+		
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        
 	   	<script src="template.js"></script>
+        
 	   	<link rel="stylesheet" href="magnificpopup/magnific-popup.css"> 
-		<script src="magnificpopup/jquery.magnific-popup.js"></script> 
+		<script src="magnificpopup/jquery.magnific-popup.js"></script>
 		<script src="magnificpopup/magnificpopup.js"></script>
+        <link rel="stylesheet" type="text/css" href="magnificpopup/magnificPopup.css">
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
         <title>Linga Ski Shop</title>
+        
         <style type="text/css" style="display:none">
         	@font-face {
 			  font-family: 'Open Sans';
@@ -112,17 +121,16 @@
 <!--FIN CAROUSSEL-->
 
 
-
-
- 
-
+        
+        
+        
 
 
 
 
 
 <!--DEBUT HEADER-->
-	<header style=" width: 100%">
+	<header>
     	<div class="banner row" id="banner">
       		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 backgroundImage" style="height:100%"></div>
 
@@ -165,7 +173,6 @@
 	</header>
 <!--FIN HEADER-->
 	
-
 
 
 
@@ -222,7 +229,12 @@
 
 
 
-
+    
+    
+    <div id="scroller">
+        <a href="#"><span id="scrollerBtn" class="glyphicon glyphicon-chevron-up" aria-hidden="true" style=""></span></a>
+           
+    </div>
 
 
 <!--DEBUT RESERVATION-->
@@ -991,11 +1003,10 @@ $(function() {
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
         if (scroll_top > sticky_navigation_offset_top) { 
-            $('#sticky_navigation').removeClass("navbar-static-top").addClass("navbar-fixed-top");
-            $('body').css({ 'margin-top': '62px' });
+            $('#scroller').css({ 'display': 'inline' });
+            
         } else {
-            $('#sticky_navigation').removeClass("navbar-fixed-top").addClass("navbar-static-top");
-            $('body').css({ 'margin-top': '0px' });
+            $('#scroller').css({ 'display': 'none' });
         }   
     };
      
@@ -1010,9 +1021,8 @@ $(function() {
 });
 </script>
 
+
+
+<li><p style="color: white;">11</p><a href="#" title="$(...).scrollTo( 0, 800, {queue:true} );" class="back">go back</a></li>
  	</body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> FETCH_HEAD
